@@ -24,47 +24,256 @@
         </div>
     </nav>
 
-    <main class="container landing-container">
-        <div class="profile-card">
-            <div class="profile-header">
-                <div class="uni-logo">
-                    <i class="fa-solid fa-university"></i>
-                    <span>UNI - FIIS</span>
+    <main class="landing-main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fa-solid fa-university"></i>
+                            <span>Universidad Nacional de Ingeniería - FIIS</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Portafolio de
+                            <span class="gradient-text">Desarrollo Adaptativo e Integrado del Software</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Documentación técnica y casos de estudio en DevOps, CI/CD y arquitectura de software
+                        </p>
+                        <div class="hero-author">
+                            <div class="author-avatar">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div class="author-info">
+                                <h2 class="author-name">Mikhael León Gordillo Inocente</h2>
+                                <p class="author-title">Estudiante de Ingeniería de Sistemas</p>
+                            </div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Artículo Publicado</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-code"></i>
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Proyecto Documentado</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="stat-number">UNI</span>
+                                <span class="stat-label">FIIS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3>DevOps & CI/CD</h3>
+                            <p>Automatización de pipelines con Jenkins</p>
+                        </div>
+                        <div class="floating-card delay-1">
+                            <div class="card-icon">
+                                <i class="fa-brands fa-docker"></i>
+                            </div>
+                            <h3>Containerización</h3>
+                            <p>Docker & Docker Compose</p>
+                        </div>
+                        <div class="floating-card delay-2">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                            <p>FastAPI + PostgreSQL</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="profile-content">
-                <div class="profile-image">
-                    <i class="fa-solid fa-user-graduate"></i>
-                </div>
-                <h1 class="student-name">Mikhael León Gordillo Inocente</h1>
-                <p class="student-role">Estudiante de Ingeniería de Sistemas</p>
+        </section>
 
-                <div class="info-grid">
-                    <div class="info-item">
-                        <span class="label">Curso</span>
-                        <span class="value">Desarrollo Adaptativo e Integrado del Software</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label">Profesor</span>
-                        <span class="value">Carlos Janjachi Toribio</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label">Universidad</span>
-                        <span class="value">Universidad Nacional de Ingeniería</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label">Facultad</span>
-                        <span class="value">Ingeniería Industrial y de Sistemas</span>
-                    </div>
+        <!-- Articles Section -->
+        <section class="articles-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title-main">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Artículos Técnicos
+                    </h2>
+                    <p class="section-description">
+                        Documentación detallada de implementaciones, análisis comparativos y casos de estudio reales
+                    </p>
                 </div>
 
-                <div class="cta-container">
-                    <a href="article.html" class="cta-button">
-                        Ver Artículo de Jenkins <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                <div class="articles-grid">
+                    <!-- Article Card 1: Jenkins -->
+                    <article class="article-card featured">
+                        <div class="article-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Destacado</span>
+                        </div>
+                        <div class="article-header">
+                            <div class="article-icon jenkins-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <div class="article-meta">
+                                <span class="article-category">
+                                    <i class="fa-solid fa-tag"></i>
+                                    DevOps & CI/CD
+                                </span>
+                                <span class="article-date">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    Noviembre 2025
+                                </span>
+                            </div>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                Implementación de Jenkins CI/CD en SISCAL: De 14.5 Minutos a 25 Segundos
+                            </h3>
+                            <p class="article-excerpt">
+                                Análisis completo de la implementación de un pipeline de CI/CD con Jenkins en el 
+                                proyecto SISCAL (Sistema de Información para Luz del Sur). Incluye comparativa con 
+                                6 alternativas del mercado, métricas DORA, casos de uso reales y ROI de 947%.
+                            </p>
+                            <div class="article-tags">
+                                <span class="tag">Jenkins</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">pytest</span>
+                                <span class="tag">CI/CD</span>
+                            </div>
+                            <div class="article-highlights">
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <div>
+                                        <strong>97% reducción</strong>
+                                        <span>en tiempo de deployment</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <div>
+                                        <strong>67% menos bugs</strong>
+                                        <span>en producción</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <div>
+                                        <strong>947% ROI</strong>
+                                        <span>en 6 meses</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <div class="stat">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <span>~2,500 líneas</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>15 min lectura</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fa-solid fa-book-bookmark"></i>
+                                    <span>17 referencias</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-footer">
+                            <a href="article.html" class="article-btn primary">
+                                <span>Leer Artículo Completo</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/Mikhael16/SI806-ARTICULO" target="_blank" class="article-btn secondary">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Ver Repositorio</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Placeholder Card for Future Articles -->
+                    <article class="article-card placeholder">
+                        <div class="placeholder-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <h3 class="placeholder-title">Próximamente</h3>
+                        <p class="placeholder-text">
+                            Nuevos artículos sobre arquitectura de microservicios, testing avanzado y más casos 
+                            de estudio serán publicados próximamente.
+                        </p>
+                        <div class="placeholder-topics">
+                            <span class="topic-item">
+                                <i class="fa-solid fa-cube"></i>
+                                Microservicios
+                            </span>
+                            <span class="topic-item">
+                                <i class="fa-solid fa-vial"></i>
+                                Testing
+                            </span>
+                            <span class="topic-item">
+                                <i class="fa-solid fa-cloud"></i>
+                                Cloud Architecture
+                            </span>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Course Info Section -->
+        <section class="course-info-section">
+            <div class="container">
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div class="course-details">
+                            <h3 class="course-name">Desarrollo Adaptativo e Integrado del Software</h3>
+                            <p class="course-code">SI806 - Universidad Nacional de Ingeniería</p>
+                        </div>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-info-grid">
+                            <div class="course-info-item">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <div>
+                                    <span class="info-label">Profesor</span>
+                                    <span class="info-value">Carlos Janjachi Toribio</span>
+                                </div>
+                            </div>
+                            <div class="course-info-item">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <div>
+                                    <span class="info-label">Facultad</span>
+                                    <span class="info-value">Ingeniería Industrial y de Sistemas (FIIS)</span>
+                                </div>
+                            </div>
+                            <div class="course-info-item">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <div>
+                                    <span class="info-label">Periodo</span>
+                                    <span class="info-value">2025-2</span>
+                                </div>
+                            </div>
+                            <div class="course-info-item">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <div>
+                                    <span class="info-label">Enfoque</span>
+                                    <span class="info-value">DevOps, Agile, CI/CD, Software Quality</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

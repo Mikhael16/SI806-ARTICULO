@@ -30,7 +30,7 @@
         <div class="container">
             <div class="hero-content">
                 <span class="badge">DevOps & Automatización</span>
-                <h1>Implementación de Jenkins en <span class="gradient-text">SISCAL</span></h1>
+                <h1>Análisis comparativo de la dependencia de herramientas DevOps en su uso, con objeto de estudio al sistema <span class="gradient-text">SISCAL</span></h1>
                 <p class="subtitle">Cómo transformamos el ciclo de desarrollo reduciendo tiempos de despliegue en un 97%
                     y eliminando errores humanos.</p>
                 <div class="hero-stats">
@@ -80,8 +80,8 @@
 
         <!-- SECCIÓN 2: PUNTOS DE DOLOR DEL PROYECTO -->
         <section id="pain-points" class="section">
-            <h2 class="section-title">Puntos de Dolor Identificados en SISCAL</h2>
-            <p class="section-desc">Problemas reales que enfrentábamos antes de implementar automatización.</p>
+            <h2 class="section-title">Puntos de Dolor Identificados en SISCAL a nivel empresarial</h2>
+            <p class="section-desc">Problemas reales que se enfrentarían con un equipo más grande antes de implementar automatización.</p>
 
             <div class="pain-points-grid">
                 <div class="pain-card critical">
@@ -91,13 +91,13 @@
                     </div>
                     <h3>Despliegues Lentos y Propensos a Errores</h3>
                     <p class="pain-description">
-                        Cada despliegue a producción requería <strong>14.5 minutos de trabajo manual continuo</strong>. 
-                        El desarrollador debía ejecutar secuencialmente: pull del repositorio, instalación de dependencias, 
+                        Cada despliegue a producción según datos similares a los que sería en SISCAL toma <strong>14.5 minutos de trabajo manual continuo</strong>. 
+                        El desarrollador debe ejecutar secuencialmente: pull del repositorio, instalación de dependencias, 
                         ejecución de tests, construcción de imagen Docker, detención de contenedores antiguos, levantamiento 
                         de nuevos servicios y verificación manual de endpoints.
                     </p>
                     <div class="pain-impact">
-                        <strong>Impacto:</strong> Con 20 deployments mensuales, perdíamos <strong>4.8 horas/mes</strong> 
+                        <strong>Impacto:</strong> Con 20 deployments mensuales, se perderían <strong>4.8 horas/mes</strong> 
                         solo en tareas repetitivas por desarrollador.
                     </div>
                 </div>
@@ -109,9 +109,9 @@
                     </div>
                     <h3>Inconsistencia Entre Entornos</h3>
                     <p class="pain-description">
-                        Cada desarrollador configuraba su entorno local de manera diferente. Algunos usaban Python 3.10, 
+                        Cada desarrollador debe configurar su entorno local de manera diferente. Algunos usarán Python 3.10, 
                         otros 3.12. PostgreSQL en puerto 5432 o 5433. Variables de entorno con valores distintos. 
-                        El clásico problema de <em>"funciona en mi máquina"</em> era recurrente.
+                        El clásico problema de <em>"funciona en mi máquina"</em> tiene tendencia a ser recurrente.
                     </p>
                     <div class="pain-impact">
                         <strong>Impacto:</strong> Aproximadamente <strong>15 bugs mensuales</strong> relacionados con 
@@ -126,7 +126,7 @@
                     </div>
                     <h3>Olvidar Pasos Críticos</h3>
                     <p class="pain-description">
-                        En la presión de un hotfix urgente, era común olvidar ejecutar la suite de tests completa, 
+                        En la presión de un hotfix urgente, será común olvidar ejecutar la suite de tests completa, 
                         actualizar dependencias, o verificar que el linting pasara. Esto resultaba en código defectuoso 
                         llegando a producción y requiriendo rollbacks inmediatos.
                     </p>
@@ -143,8 +143,8 @@
                     </div>
                     <h3>Onboarding Complejo para Nuevos Desarrolladores</h3>
                     <p class="pain-description">
-                        Integrar un nuevo desarrollador al equipo tomaba <strong>3.5 horas de configuración</strong> 
-                        más 3 deployments supervisados antes de que pudiera hacerlo independientemente. Debía aprender 
+                        Integrar un nuevo desarrollador al equipo tomaría unas <strong>3.5 horas de configuración</strong> 
+                        más 3 deployments supervisados antes de que pudiera hacerlo independientemente. Deberá aprender 
                         manualmente cada paso, configurar su entorno local, entender el flujo de Git, y memorizar 
                         comandos específicos de Docker Compose.
                     </p>
@@ -161,8 +161,8 @@
                     </div>
                     <h3>Rollbacks Lentos y Complejos</h3>
                     <p class="pain-description">
-                        Cuando un deployment fallaba en producción, revertir a la versión anterior tomaba 
-                        <strong>25-30 minutos</strong>. Había que identificar el commit correcto, hacer checkout manual, 
+                        Cuando un deployment falle en producción, revertir a la versión anterior tomaría unos 
+                        <strong>25-30 minutos</strong>. Se tendría que identificar el commit correcto, hacer checkout manual, 
                         reconstruir la imagen Docker, y redesplegar todo el stack mientras los usuarios reportaban errores.
                     </p>
                     <div class="pain-impact">
@@ -178,7 +178,7 @@
                     </div>
                     <h3>Falta de Trazabilidad y Auditoría</h3>
                     <p class="pain-description">
-                        No teníamos un registro automatizado de quién desplegó qué, cuándo y con qué resultado. 
+                        No tenemos un registro automatizado de quién desplegó qué, cuándo y con qué resultado. 
                         La documentación de cambios dependía de que los desarrolladores recordaran actualizar 
                         manualmente un archivo CHANGELOG.md, que frecuentemente quedaba desactualizado.
                     </p>
@@ -859,7 +859,7 @@
                 <div class="comparison-intro">
                     <p>
                         La decisión de implementar Jenkins en SISCAL no fue arbitraria. Evaluamos 
-                        <strong>6 alternativas principales</strong> durante 2 semanas, considerando factores técnicos, 
+                        <strong>6 alternativas principales</strong>, considerando factores técnicos, 
                         económicos y de compatibilidad con nuestra stack tecnológica existente. A continuación, 
                         presentamos el análisis detallado que justifica nuestra elección.
                     </p>
@@ -1184,7 +1184,7 @@
         <!-- SECCIÓN AGREGADA: CASOS DE USO ESPECÍFICOS EN SISCAL -->
         <section id="use-cases" class="section">
             <h2 class="section-title">Análisis de Decisiones: Casos de Uso en SISCAL</h2>
-            <p class="section-desc">Evaluación de alternativas para escenarios reales del proyecto con justificación técnica.</p>
+            <p class="section-desc">Evaluación de alternativas para escenarios reales y actuales del proyecto con justificación técnica.</p>
 
             <div class="use-cases-container">
                 <!-- CASO 1: DESPLIEGUE DE LA APLICACIÓN -->
@@ -1755,7 +1755,7 @@ ignore = E501,W503,E203
                         </div>
 
                         <div class="real-world-case">
-                            <h4><i class="fa-solid fa-newspaper"></i> Caso Real en SISCAL</h4>
+                            <h4><i class="fa-solid fa-newspaper"></i> Caso Simulado en SISCAL</h4>
                             <div class="case-story">
                                 <p>
                                     <strong>Fecha:</strong> 15 de Noviembre, 2025<br>
